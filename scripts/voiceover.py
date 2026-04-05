@@ -19,7 +19,11 @@ import sys
 import subprocess
 import os
 
-API_KEY = "ATP63zELRe4AZYSOjhLg1DTyEvxO44uI"
+API_KEY = os.environ.get("MISTRAL_API_KEY", "")
+if not API_KEY:
+    print("Error: MISTRAL_API_KEY environment variable not set.")
+    print("Set it with: export MISTRAL_API_KEY=your_key_here")
+    sys.exit(1)
 API_URL = "https://api.mistral.ai/v1/audio/speech"
 
 VOICES = {
