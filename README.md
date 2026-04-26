@@ -1,8 +1,10 @@
 # Tashi Workstation
 
-Complete AI engineering workstation. One script installs everything from zero: 32 AI agents, 57 skills (including a custom 5-advisor decision council), 2 local AI models, ChatGPT-like web UI, video editing pipeline, metadata cleaner, Telegram notifications, McKinsey slide generator, and document automation.
+Complete AI engineering workstation. One script installs everything from zero: 32 AI agents, 169+ skills across 14 domains (SEO/GEO/AEO, multi-platform ad audits, blog engine with AI detection, video production, security audits, scientific research, trading analysis, and more), 2 local AI models, ChatGPT-like web UI, video editing pipeline, metadata cleaner, Telegram notifications, McKinsey slide generator, and document automation.
 
 Built for Mac.
+
+**Latest:** [2026-04-26 Skills Expansion](docs/SKILLS-EXPANSION-2026-04-26.md) — added 19 skill packs (~250+ sub-skills) covering SEO, advertising, content, video, security, science, trading, and ML evals. Zero new subscriptions required.
 
 ---
 
@@ -36,6 +38,7 @@ Includes: what clients pay for, which tools deliver it, pricing guide ($500-15K 
 | **FFmpeg + Remotion** | Video editing — merge clips, transitions, animations, metadata | Installed |
 | **Telegram Bot** | Phone notifications when tasks complete + local log | Config only |
 | **Document Generators** | Auto-create branded PPT and Word files (JS + Python) | ~5 MB |
+| **2026 Skills Expansion** | 19 skill packs: SEO, ads, blog, video, GIF, email, repurposing, YouTube, shorts, security, science, trading, evals, founder/marketing, copywriting | ~250+ sub-skills |
 
 ## One-Command Setup
 
@@ -50,6 +53,7 @@ chmod +x scripts/*.sh
 
 ```bash
 ./scripts/setup-all.sh                          # Everything
+./scripts/setup-2026-skills-expansion.sh         # 19 skill packs (~250+ sub-skills) — SEO, ads, blog, video, security, science, trading, evals
 ./scripts/setup-telegram.sh <TOKEN> <CHAT_ID>   # Telegram notifications
 ./scripts/setup-instrumenta.sh                   # PowerPoint toolbar
 ./scripts/setup-open-webui.sh                    # ChatGPT-like UI
